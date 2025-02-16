@@ -151,7 +151,7 @@
             height: auto;
             max-height: 200px;
             max-width: 200px;
-            border-radius: 50px;
+            border-radius: 7px;
             box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.8),
                         0px 0px 30px rgba(173, 216, 230, 0.6);
         }
@@ -1177,8 +1177,13 @@ const translations = {
 
     // Создаем звезды
     function createStars() {
-      const stars = document.getElementById('stars');
-      const count = 320; // количество звезд
+      const stars = document.getElementById('stars').style.background = "url('123.gif')";
+      stars.style.left = 0;
+      stars.style.top = 0;
+      stars.style.width = 2500;
+      stars.style.height = 2500;
+      stars.style.size = 1
+      const count = 1000; // количество звезд
 
       for(let i = 0; i < count; i++) {
         const star = document.createElement('div');
